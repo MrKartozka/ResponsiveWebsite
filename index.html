@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обучение Фронтенду</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/main.png" />
+</head>
+
+<body>
+
+    <!-----------------------header--------------------->
+
+    <header class="header">
+        <a href="#" class="logo"> <i class="fa-brands fa-stack-overflow"></i>Frontend</a>
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="Поиск..." id="searchBox">
+            <label for="searchBox" class="fas fa-search"></label>
+        </form>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-moon" id="theme-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <nav class="navbar">
+            <a href="#home">Главная</a>
+            <a href="#packages">Услуги</a>
+            <a href="#services">Сервисы</a>
+            <a href="#pricing">Цена пакетов</a>
+            <a href="#review">Отзывы</a>
+            <a href="#contact">Контакты</a>
+            <a href="#blogs">Блоги</a>
+        </nav>
+        <form action="" class="login-form">
+            <div class="inputBox">
+                <span>Имя пользователя</span>
+                <input type="text" placeholder="Введите логин">
+            </div>
+            <div class="inputBox">
+                <span>Пароль</span>
+                <input type="password" placeholder="Введите пароль">
+            </div>
+            <div class="remember">
+                <input type="checkbox" name="" id="login-remember">
+                <label for="login-remember">Запомнить меня</label>
+            </div>
+            <input type="submit" class="btn" value="Login">
+        </form>
+    </header>
+
+    <!---------------------section main----------------------->
+
+    <section class="home" id="home">
+        <div class="content" data-aos="fade-up">
+            <h3>Чтобы стать фронтендером,
+                не нужно техническое образование</h3>
+            <p>Освоить эту профессию и начать путь в IT может каждый человек!</p>
+            <a href="#" class="btn">Выбор услуги</a>
+        </div>
+        <div class="image" data-aos="fade-down">
+            <img src="img/mainbg.png" alt="">
+        </div>
+    </section>
+
+    <!---------------------section packages----------------------->
+
+    <section class="packages" id="packages">
+        <h1 class="heading"><span>Услуги</span> </h1>
+        <div class="box-container">
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img/html.jpg" alt="">
+                    <h3>HTML</h3>
+                </div>
+                <div class="content">
+                    <div class="price">3500руб <span>4500руб</span></div>
+                    <p>Погрузимся в мир программирования и научимся базовым принципам разметок</p>
+                </div>
+                <a href="#" class="btn">Приобрести</a>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img/htmlcss.jpg" alt="">
+                    <h3>HTML & CSS</h3>
+                </div>
+                <div class="content">
+                    <div class="price">4000руб <span>6000руб</span></div>
+                    <p>Изучим продвинутые принципы программирования на html и css</p>
+                </div>
+                <a href="#" class="btn">Приобрести</a>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img/javascript.png" alt="">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="content">
+                    <div class="price">2500руб <span>4500руб</span></div>
+                    <p>Научимся взаимодействовать со страницей, делать базовые анимации</p>
+                </div>
+                <a href="#" class="btn">Приобрести</a>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img/react.png" alt="">
+                    <h3>React</h3>
+                </div>
+                <div class="content">
+                    <div class="price">3000руб <span>4000руб</span></div>
+                    <p>Познакомимся с одним из фреймоворков - React</p>
+                </div>
+                <a href="#" class="btn">Приобрести</a>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img/angular.png" alt="">
+                    <h3>Angular</h3>
+                </div>
+                <div class="content">
+                    <div class="price">3000руб <span>4000руб</span></div>
+                    <p>Познакомимся с одним из фреймоворков - Angular</p>
+                </div>
+                <a href="#" class="btn">Приобрести</a>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img/vue.png" alt="">
+                    <h3>Vue</h3>
+                </div>
+                <div class="content">
+                    <div class="price">3000руб <span>4000руб</span></div>
+                    <p>Познакомимся с одним из фреймоворков - Vue</p>
+                </div>
+                <a href="#" class="btn">Приобрести</a>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------section services----------------------->
+
+    <section class="services" id="services">
+        <h1 class="heading"><span>Сервисы</span></h1>
+        <div class="box-container">
+            <div class="box" data-aos="zoom-in">
+                <span>01</span>
+                <i class="fa-solid fa-book"></i>
+                <h3>Образование</h3>
+                <p>После прохождения курса, вам будет выдан сертификат о прохождении</p>
+            </div>
+            <div class="box" data-aos="zoom-in">
+                <span>02</span>
+                <i class="fa-solid fa-signal"></i>
+                <h3>Скачивание материала</h3>
+                <p>Можно скачивать видеоматериал, если уезжаете куда-то</p>
+            </div>
+            <div class="box" data-aos="zoom-in">
+                <span>03</span>
+                <i class="fa-brands fa-github"></i>
+                <h3>OpenSource</h3>
+                <p>Мы выкладываем полезный материал в наш гитхаб репозиторий</p>
+            </div>
+            <div class="box" data-aos="zoom-in">
+                <span>04</span>
+                <i class="fa-solid fa-check"></i>
+                <h3>Обновление</h3>
+                <p>Мы проводим регулярный анализ на обновление материала к уроку</p>
+            </div>
+            <div class="box" data-aos="zoom-in">
+                <span>05</span>
+                <i class="fa-brands fa-android"></i>
+                <h3>Адаптивность</h3>
+                <p>Можно смотреть наши видеоуроки на телефоне</p>
+            </div>
+            <div class="box" data-aos="zoom-in">
+                <span>06</span>
+                <i class="fa-solid fa-thumbs-up"></i>
+                <h3>Результат</h3>
+                <p>Мы реализуем совместные проекты со многими нашими клиентами и партнерами в самых разных сферах</p>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------section pricing----------------------->
+
+    <section class="pricing" id="pricing">
+        <h1 class="heading"><span>Цены на пакет</span></h1>
+        <div class="box-container">
+            <div class="box" data-aos="zoom-in-up">
+                <h3>Базовый план</h3>
+                <div class="price">
+                    <span class="amount">4000руб</span>
+                </div>
+                <ul>
+                    <li>90 дней открытого материала, после того как пройдёте курс</li>
+                    <li>Открытый чат к курсу</li>
+                    <li>Видеоматериалы и задания</li>
+                    <li>HTML (база), HTML + CSS (продвинутый)</li>
+                </ul>
+                <a href="#" class="btn">Выбрать план</a>
+            </div>
+            <div class="box" data-aos="zoom-in-up">
+                <h3>Стандартный план</h3>
+                <div class="price">
+                    <span class="amount">7500руб</span>
+                </div>
+                <ul>
+                    <li>120 дней открытого материала, после того как пройдёте курс</li>
+                    <li>Открытый чат к курсу</li>
+                    <li>Видеоматериалы и задания</li>
+                    <li>HTML (база), HTML + CSS (продвинутый), JavaScript</li>
+                    <li>Доступ к видеовстрече с ментором курса</li>
+                </ul>
+                <a href="#" class="btn">Выбрать план</a>
+            </div>
+            <div class="box" data-aos="zoom-in-up">
+                <h3>Премиум план</h3>
+                <div class="price">
+                    <span class="amount">12000руб</span>
+                </div>
+                <ul>
+                    <li>НЕОГРАНИЧЕННЫЙ доступ к открытому материалу, после того как пройдёте курс</li>
+                    <li>Открытый чат к курсу</li>
+                    <li>Видеоматериалы и задания</li>
+                    <li>HTML (база), HTML + CSS (продвинутый), JavaScript, 2 любых фреймворка на выбор</li>
+                    <li>Доступ к видеовстрече с ментором курса</li>
+                    <li>Рекомендации к собеседованию на junior frondend разработчика</li>
+                </ul>
+                <a href="#" class="btn">Выбрать план</a>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------section review----------------------->
+
+    <section class="review" id="review">
+        <h1 class="heading"><span>Отзывы</span></h1>
+        <div class="swiper review-slider" data-aos="zoom-in">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <img src="img/man.jpg" alt="">
+                    <h3>Антон Паринов</h3>
+                    <p>Хочу выразить свою признательность учебному центру, особенно преподавателю курса 'Основы
+                        программирования и баз данных'. Ожидания от курса оправдались, так как хотелось получить общие
+                        понятия и термины и узнать направления, которые можно было бы изучать в зависимости от области
+                        применения.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <img src="img/man.jpg" alt="">
+                    <h3>Аркадий Паровозов</h3>
+                    <p>Обучение мне понравилось, даже при условии, что у меня не получалось присутствовать на лекциях
+                        из-за работы, менеджеры позаботились о записях. Преподаватель видно, что знает свое дело. Весь
+                        материал, который мне скинули, был мне полезен</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <img src="img/man.jpg" alt="">
+                    <h3>Алексей Меркуров</h3>
+                    <p>Узнал для себя что-то новое в IT сфере. Надо еще учиться и учиться, чтоб все хорошо
+                        понять. Преподаватель отличный, что-то было понятно сразу, что-то нет, но он всегда добивался от
+                        нас полного понимания.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <img src="img/man.jpg" alt="">
+                    <h3>Вячеслав Барецкий</h3>
+                    <p>Всегда мечтал стать программистом, но мешало тестирование в институтах, которое успешно заваливал
+                        из раза в раз. Курсы Специалист - это просто находка, билет в новую жизнь. Хочется подчеркнуть
+                        отдельно огромный труд администрации, их компетентность и профессионализм</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <img src="img/man.jpg" alt="">
+                    <h3>Станислав Тихонов</h3>
+                    <p>Ежедневно работаю с IT разработчиками со стороны бизнеса - постановка технических задач
+                        разработчикам. Курс помог заполнить пробелы в теоретической части и попробовать программирование
+                        самому.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!---------------------section contact----------------------->
+
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Обратная связь</span></h1>
+        <form action="" data-aos="zoom">
+            <div class="inputBox">
+                <input type="text" placeholder="Имя" data-aos="fade-up">
+                <input type="email" placeholder="Почта" data-aos="fade-up">
+            </div>
+            <textarea name="" placeholder="Ваше сообщение..." id="" cols="30" rows="10" data-aos="fade-up"></textarea>
+            <input type="submit" value="Отправить сообщение" class="btn">
+        </form>
+    </section>
+
+    <!---------------------section blogs----------------------->
+
+    <section class="blogs" id="blogs">
+        <h1 class="heading"><span>Новости</span></h1>
+        <div class="box-container">
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img/blog1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Научитесь не только frontend разработке, а также и backend разработке</h3>
+                    <a href="#" class="btn">Читать больше</a>
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-calendar"></i>10.01.2024</a>
+                        <a href="#"><i class="fas fa-user"></i>Developer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img/blog2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Конкуретность среди начинающих программистов стремительно растёт</h3>
+                    <a href="#" class="btn">Читать больше</a>
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-calendar"></i>15.01.2024</a>
+                        <a href="#"><i class="fas fa-user"></i>Developer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img/blog3.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Если вы молодой специалист, закончивший недавно школу, скорее спешите к нам</h3>
+                    <a href="#" class="btn">Читать больше</a>
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-calendar"></i>19.01.2024</a>
+                        <a href="#"><i class="fas fa-user"></i>Developer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------section footer----------------------->
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box" data-aos="fade-up">
+                <h3>Контактная информация:</h3>
+                <a href="#"><i class="fas fa-phone"></i>+7-714-245-16-94</a>
+                <a href="#"><i class="fas fa-phone"></i>+7-265-821-69-25</a>
+                <a href="#"><i class="fas fa-envelope"></i>frontend@gmail.com</a>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <h3>Подписывайтесь на нас:</h3>
+                <a href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+                <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            </div>
+        </div>
+        <div class="credit">Все Права Защищены 2024 ©</div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            delay: 400
+        });
+    </script>
+</body>
+
+</html>
